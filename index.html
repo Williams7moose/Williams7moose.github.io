@@ -2,84 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Williams Moose – Data Analyst Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Williams Cerrud | Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
       color: #333;
       line-height: 1.6;
     }
-    h1, h2, h3 {
-      color: #0b5394;
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
     }
-    ul {
-      list-style-type: none;
-      padding: 0;
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
     }
-    li {
-      background: #fff;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-    a {
-      text-decoration: none;
-      color: #007acc;
-      font-weight: bold;
+    h2, h3 {
+      color: #444;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    .dashboard {
-      margin-top: 20px;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    iframe {
-      width: 100%;
-      height: 800px;
-      border: none;
-      border-radius: 8px;
+    .tableau-container {
+      margin: 2rem 0;
     }
   </style>
 </head>
 <body>
 
-  <h1>Hi, I'm Williams Moose</h1>
-  <p>
-    Welcome to my data analysis portfolio! I’m a physicist and aspiring data analyst with experience 
-    in data cleaning, visualization, and insight generation using tools like Python, SQL, Excel, and Tableau.
-  </p>
+  <header>
+    <h1>Williams Cerrud</h1>
+    <p>Data Analyst | Physics Graduate | Portfolio</p>
+  </header>
 
-  <h2>📊 Featured Projects</h2>
-  <ul>
-    <li>
-      <a href="projects/airline-loyalty-program/index.html">✈️ Airline Loyalty Program Analysis</a><br>
-      <small>Analyzing FFP membership trends using Tableau dashboards and KPIs.</small>
-    </li>
-    <!-- Add more projects here -->
-  </ul>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Welcome to my portfolio! I’m passionate about turning data into actionable insights 
+        through visualization, statistical analysis, and storytelling. 
+        Below, you can explore one of my Tableau dashboards hosted on Tableau Public.
+      </p>
+    </section>
 
-  <div class="dashboard">
-    <h3>Airline Loyalty Program Dashboard</h3>
-    <iframe 
-      src="https://public.tableau.com/views/Countrieswithmostpoints/Sheet1?:language=en-US&:display_count=n&:origin=viz_share_link" 
-      allowfullscreen="true">
-    </iframe>
-  </div>
+    <section class="tableau-container">
+      <h2>Tableau Dashboard</h2>
+      <p>Countries with the most points (interactive visualization)</p>
 
-  <h2>📬 Contact</h2>
-  <ul>
-    <li>Email: <a href="mailto:w7moose@gmail.com">w7moose@gmail.com</a></li>
-    <li>GitHub: <a href="https://github.com/williams7moose" target="_blank">github.com/williams7moose</a></li>
-    <li>LinkedIn: <a href="https://linkedin.com/in/williams7moose" target="_blank">linkedin.com/in/williams7moose</a></li>
-  </ul>
+      <!-- Tableau Embed -->
+      <div class='tableauPlaceholder' id='viz1755989094004' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='Countries with most points' 
+                 src='https://public.tableau.com/static/images/Co/Countrieswithmostpoints_17559890097700/Sheet1/1_rss.png' 
+                 style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> 
+          <param name='site_root' value='' />
+          <param name='name' value='Countrieswithmostpoints_17559890097700/Sheet1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Co/Countrieswithmostpoints_17559890097700/Sheet1/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>                
+
+      <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1755989094004');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        vizElement.style.width='100%'; 
+        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+      </script>
+    </section>
+  </main>
 
 </body>
 </html>
