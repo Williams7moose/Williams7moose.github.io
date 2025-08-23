@@ -10,8 +10,9 @@
       margin: 40px;
       background-color: #f5f5f5;
       color: #333;
+      line-height: 1.6;
     }
-    h1 {
+    h1, h2, h3 {
       color: #0b5394;
     }
     ul {
@@ -33,12 +34,28 @@
     a:hover {
       text-decoration: underline;
     }
+    .dashboard {
+      margin-top: 20px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
 
   <h1>Hi, I'm Williams Moose</h1>
-  <p>Welcome to my data analysis portfolio! I’m a physicist and aspiring data analyst with experience in data cleaning, visualization, and insight generation using tools like Python, SQL, Excel, and Tableau.</p>
+  <p>
+    Welcome to my data analysis portfolio! I’m a physicist and aspiring data analyst with experience 
+    in data cleaning, visualization, and insight generation using tools like Python, SQL, Excel, and Tableau.
+  </p>
 
   <h2>📊 Featured Projects</h2>
   <ul>
@@ -49,26 +66,20 @@
     <!-- Add more projects here -->
   </ul>
 
-  <div>
-  <h3>Airline Loyalty Program Dashboard</h3>
-<iframe 
-  src="https://public.tableau.com/shared/9B4PW4C3M?:display_count=n&:origin=viz_share_link" 
-  width="1000" 
-  height="800" 
-  frameborder="0" 
-  allowfullscreen="true">
-</iframe>
-
-</div>
+  <div class="dashboard">
+    <h3>Airline Loyalty Program Dashboard</h3>
+    <iframe 
+      src="https://public.tableau.com/views/Countrieswithmostpoints/Sheet1?:language=en-US&:display_count=n&:origin=viz_share_link" 
+      allowfullscreen="true">
+    </iframe>
+  </div>
 
   <h2>📬 Contact</h2>
   <ul>
-    <li>Email: <a href="mailto:w7moose@gmail.com">youremail@example.com</a></li>
-    <li>GitHub: <a href="https://github.com/williams7moose">github.com/williams7moose</a></li>
-    <li>LinkedIn: <a href="https://linkedin.com/in/your-link">linkedin.com/in/your-link</a></li>
+    <li>Email: <a href="mailto:w7moose@gmail.com">w7moose@gmail.com</a></li>
+    <li>GitHub: <a href="https://github.com/williams7moose" target="_blank">github.com/williams7moose</a></li>
+    <li>LinkedIn: <a href="https://linkedin.com/in/williams7moose" target="_blank">linkedin.com/in/williams7moose</a></li>
   </ul>
 
 </body>
 </html>
-
-Add homepage index.html
